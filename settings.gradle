@@ -37,6 +37,7 @@ pluginManagement {
                 includeGroupAndSubgroups('net.minecraftforge')
             }
         }
+        maven { url "https://maven.architectury.dev/" }
     }
 }
 

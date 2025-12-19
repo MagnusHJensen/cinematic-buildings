@@ -1,0 +1,4 @@
+- Make it possible to step through a cinematic building.
+- Better layer management
+  - Visualizing what will go into the next layer
+  - Outline box visualization
