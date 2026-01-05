@@ -3,7 +3,6 @@ package dk.magnusjensen.cinematicbuildings.commands;
 import com.mojang.brigadier.CommandDispatcher;
 import com.mojang.brigadier.arguments.IntegerArgumentType;
 import com.mojang.brigadier.arguments.StringArgumentType;
-import com.mojang.brigadier.exceptions.CommandSyntaxException;
 import dk.magnusjensen.cinematicbuildings.BuildLayersRunnable;
 import dk.magnusjensen.cinematicbuildings.CommonClass;
 import dk.magnusjensen.cinematicbuildings.data.CinematicBuildingsData;
@@ -30,13 +29,7 @@ public class CommandHandler {
         // For now, we register directly here, to keep it collected, and we later know of a better separation
         dispatcher.register(
             Commands.literal(COMMAND_ROOT)
-                .requires(ctx -> {
-                    try {
-                        return ctx.getPlayerOrException().permissions().hasPermission(new Permission.HasCommandLevel(PermissionLevel.MODERATORS));
-                    } catch (CommandSyntaxException e) {
-                        throw new RuntimeException(e);
-                    }
-                }) // Require at least level 2 (command blocks / cheats)
+                .requires(ctx -> ctx.permissions().hasPermission(new Permission.HasCommandLevel(PermissionLevel.MODERATORS))) // Require at least level 2 (command blocks / cheats)
                 .then(Commands.literal("delete")
                     .then(Commands.argument("building_name", StringArgumentType.string())
                         .executes(context -> {

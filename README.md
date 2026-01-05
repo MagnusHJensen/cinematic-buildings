@@ -1,15 +1,19 @@
 # Cinematic Buildings - Create cinematic building shots with ease!
 
-[![Demo Showcase of Cinematic Buildings Minecraft mod](https://img.youtube.com/vi/INJ0Kx4FVl4/0.jpg)](https://www.youtube.com/watch?v=INJ0Kx4FVl4)
-
 Cinematic Buildings is a mod for Minecraft that allows players to create cinematic building shots with ease.
 
 This mod is designed to enhance the visual experience of servers/modpacks, by allowing users to trigger building animations that showcase the construction of structures in a cinematic way or tearing down of structures.
 
+**Perfect for server owners, or modpack creators!**
+
+[![Demo Showcase of Cinematic Buildings Minecraft mod](https://img.youtube.com/vi/INJ0Kx4FVl4/0.jpg)](https://www.youtube.com/watch?v=INJ0Kx4FVl4)
+
+*Demo showcasing a house getting built with Cinematic Buildings*
+
 ## Features
 
 Cinematic Buildings offers the following features:
-- Create building animations
+- Create building animations via commands (`/cb`)
   - Can be executed via command to run with set initial delay and layer delay
 
 

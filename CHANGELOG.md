@@ -1,2 +1,2 @@
-# 0.1.0 - 1.21.11
-- Initial release of Cinematic Buildings.
+# 0.1.1 - 1.21.11
+- Fixed invalid player data upon joining singleplayer and servers on Fabric.
